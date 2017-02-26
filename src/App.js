@@ -6,16 +6,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <header className="App-header">
           <img src={logo} className="App-logo" width="100px" height="100px" alt="logo" />
           <h2>Rurubot</h2>
-        </div>
-        <div className="App-body">
+        </header>
+        <main className="App-body">
           <h2>Rurubot</h2>
-        </div>
-        <div className="App-footer">
+        </main>
+        <footer className="App-footer">
           <p>Copyright (c) 2017 Dreidev All Rights Reserved.</p>
-        </div>
+        </footer>
       </div>
     );
   }
