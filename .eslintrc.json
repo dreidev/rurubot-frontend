@@ -1,0 +1,26 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended", "react-app", "dreidev"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    "jsx": true
+    }
+  },
+  "rules": {
+    "camelcase": [0, {"properties": "never"}],
+    "require-jsdoc": 0,
+    "new-cap": 1,
+    "no-console": 0,
+    "max-len": [2, {
+      "code": 120,
+      "tabWidth": 2,
+      "ignoreUrls": true
+    }]
+  }
+}

@@ -2,16 +2,49 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreidev/rurubot.git"
+  },
+  "author": {
+    "name": "Ahmed Tarek",
+    "email": "tokyo@dreidev.com",
+    "url": "http://github.com/a-tokyo"
+  },
+  "organization": {
+    "name": "dreidev",
+    "email": "contact@dreidev.com",
+    "url": "http://github.com/dreidev"
+  },
+  "contributors": [
+    {
+      "name": "Ahmed Tarek",
+      "email": "tokyo@dreidev.com",
+      "url": "http://github.com/a-tokyo"
+    }
+  ],
   "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-dreidev": "^0.1.0",
+    "eslint-config-react-app": "^0.5.2",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.1",
     "react-scripts": "0.9.0"
   },
   "dependencies": {
+    "material-ui": "^0.17.0",
+    "materialize-css": "^0.98.0",
+    "normalize-css": "^2.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
