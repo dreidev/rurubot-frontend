@@ -2,6 +2,27 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreidev/rurubot.git"
+  },
+  "author": {
+    "name": "Ahmed Tarek",
+    "email": "tokyo@dreidev.com",
+    "url": "http://github.com/a-tokyo"
+  },
+  "organization": {
+    "name": "dreidev",
+    "email": "contact@dreidev.com",
+    "url": "http://github.com/dreidev"
+  },
+  "contributors": [
+    {
+      "name": "Ahmed Tarek",
+      "email": "tokyo@dreidev.com",
+      "url": "http://github.com/a-tokyo"
+    }
+  ],
   "devDependencies": {
     "eslint": "^3.16.1",
     "eslint-config-dreidev": "^0.1.0",
