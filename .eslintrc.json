@@ -4,7 +4,7 @@
     "node": true,
     "mocha": true
   },
-  "extends": ["eslint:recommended", "dreidev"],
+  "extends": ["eslint:recommended", "react-app", "dreidev"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
