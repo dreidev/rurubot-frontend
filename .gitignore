@@ -16,5 +16,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# css files
+# css files since scss is used
 src/**/*.css
