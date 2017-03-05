@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 1em;
 }
 
 .App-logo {
@@ -21,4 +24,12 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.daily-tasks__item__tasks-container{
+  display: flex;
+  justify-content: center;
+  span {
+    margin: 0 0.5em;
+  }
 }
